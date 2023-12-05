@@ -1,0 +1,14 @@
+New Transaction: 
+curl -X POST -H "Content-Type: application/json" -d '{"id":"2","data": "test1"}' http://127.0.0.1:5001/new_transaction
+
+Chain:
+curl http://127.0.0.1:5001/chain
+
+Mine:
+curl http://127.0.0.1:5001/mine
+
+Resolve Conflicts:
+curl http://127.0.0.1:5001/resolve_conflicts
+
+Register nodes: First IP is other computer, second ip is current computer
+curl -X POST -H "Content-Type: application/json" -d '{"node_url": "http://192.168.68.101:5001/"}' http://127.0.0.1:5001/register_node
